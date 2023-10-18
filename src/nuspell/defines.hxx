@@ -1,4 +1,4 @@
-/* Copyright 2017-2023 Dimitrij Mijoski
+/* Copyright 2016-2023 Dimitrij Mijoski
  *
  * This file is part of Nuspell.
  *
@@ -16,5 +16,10 @@
  * along with Nuspell.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#define CATCH_CONFIG_MAIN
-#include <catch2/catch.hpp>
+#ifndef NUSPELL_DEFINES_HXX
+#define NUSPELL_DEFINES_HXX
+
+#define NUSPELL_BEGIN_INLINE_NAMESPACE inline namespace v5 {
+#define NUSPELL_END_INLINE_NAMESPACE }
+
+#endif // NUSPELL_DEFINES_HXX

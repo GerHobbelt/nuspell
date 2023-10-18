@@ -1,4 +1,4 @@
-/* Copyright 2018-2022 Dimitrij Mijoski
+/* Copyright 2018-2023 Dimitrij Mijoski
  *
  * This file is part of Nuspell.
  *
@@ -34,7 +34,7 @@
 #include <vector>
 
 namespace nuspell {
-inline namespace v5 {
+NUSPELL_BEGIN_INLINE_NAMESPACE
 
 template <class It>
 class Subrange {
@@ -1832,6 +1832,6 @@ auto inline Phonetic_Table::replace(Str& word) const -> bool
 	}
 	return ret;
 }
-} // namespace v5
+NUSPELL_END_INLINE_NAMESPACE
 } // namespace nuspell
 #endif // NUSPELL_STRUCTURES_HXX

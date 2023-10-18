@@ -1,4 +1,4 @@
-/* Copyright 2016-2022 Dimitrij Mijoski
+/* Copyright 2016-2023 Dimitrij Mijoski
  *
  * This file is part of Nuspell.
  *
@@ -23,7 +23,7 @@
 using namespace std;
 
 namespace nuspell {
-inline namespace v5 {
+NUSPELL_BEGIN_INLINE_NAMESPACE
 
 template <class L>
 class At_Scope_Exit {
@@ -2005,5 +2005,5 @@ auto Checker::check_compound_with_rules(
 	}
 	return {};
 }
-} // namespace v5
+NUSPELL_END_INLINE_NAMESPACE
 } // namespace nuspell

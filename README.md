@@ -26,9 +26,10 @@ Main features of Nuspell spelling checker:
 Build-only dependencies:
 
   - C++ 17 compiler with support for `std::filesystem`, e.g. GCC >= v9
-  - CMake >= v3.8
+  - CMake >= v3.12
   - Catch2 >= v2.3.0 (It is only needed when building the tests. If it is not
-    available as a system package, the the Git submodule will be used.)
+    available as a system package, the CMake will download it using
+    `FetchContent`.)
   - Getopt (It is needed only on Windows + MSVC and only when the CLI tool or
     the tests are built. It is available in vcpkg. Other platforms provide
     it out of the box.)
@@ -102,9 +103,9 @@ manuals.
 1.  Install Visual Studio 2017 or newer. Alternatively, you can use
     Visual Studio Build Tools.
 2.  Install Git for Windows and Cmake.
-3.  Install vcpkg in some folder, e.g. in `c:\vcpkg`.
-4.  Run `vcpkg install icu getopt --triplet=x64-windows`.
-5.  Run the commands bellow.
+3.  Install Vcpkg in some folder, e.g. in `c:\vcpkg`.
+4.  Run the commands bellow. Vcpkg will work in manifest mode and it will
+    automatically install the dependencies.
 
 <!-- end list -->
 

@@ -1,4 +1,4 @@
-/* Copyright 2016-2022 Dimitrij Mijoski
+/* Copyright 2016-2023 Dimitrij Mijoski
  *
  * This file is part of Nuspell.
  *
@@ -22,7 +22,7 @@
 #include "checker.hxx"
 
 namespace nuspell {
-inline namespace v5 {
+NUSPELL_BEGIN_INLINE_NAMESPACE
 
 struct NUSPELL_EXPORT Suggester : public Checker {
 
@@ -92,6 +92,6 @@ struct NUSPELL_EXPORT Suggester : public Checker {
 	    -> void;
 };
 
-} // namespace v5
+NUSPELL_END_INLINE_NAMESPACE
 } // namespace nuspell
 #endif // NUSPELL_SUGGESTER_HXX
